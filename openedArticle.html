@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>New Page</title>
+</head>
+<body>
+    <div class="body">
+        <div class="header-small">medium alike</div>
+        <div class="header-big" id="goBack" style="height: 152px;"> <img src="Left.png" alt=""></div> 
+        <script>
+            let back = document.getElementById("goBack");
+            back.addEventListener("click", () => {
+                window.location.href = 'index.html';
+            });
+        </script>
+        <div class="news-fill" id="news"> 
+            <div class="news-top">
+                <div class="news-top1">
+                    <img src="64px.png" alt="">
+                    <div class="news-author">
+                        <div class="inter500" id="authorId"></div>
+                        <div class="news-data inter500-grey">
+                            <div id="dateId"></div>
+                            <div>·</div>
+                            <div>12 min read</div>
+                            <div>·</div>
+                            <div>Member-only</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <img src="LinkedIn.png" alt="">
+                    <img src="Facebook Circled.png" alt="">
+                    <img src="Twitter.png" alt="">
+                </div>
+            </div>
+            <div class="topic">
+                <div class="inter700" id="titleId"></div>
+                <div class="sf-pro" id="textId"></div>
+            </div>
+            <img src="" alt="" class="img-topic" id="imgId">
+            <div class="artilce-text-full">
+                <div class="inter700" id="titleId1"></div>
+                <div class="sf-pro" id="textId1"></div>
+            </div>
+            <div class="interaction">
+                <div class="social">
+                    <img src="Heart.png" alt="">
+                    <div class="inter500-grey">12</div>
+                    <img src="Speech Bubble.png" alt="">
+                    <div class="inter500-grey">157</div>
+                </div>
+                <img src="Bookmark.png" alt="">
+            </div>
+        </div>
+        
+    <div class="footer">
+        <div class="inter500-grey">Credits: photos from <a href="url">Unsplash.com</a>, icons from <a href="url">Icons8</a>, graphics from <a href="url">craftwork.design</a>.</div>
+        <div class="inter500"> Made with ✨❤️ at nFactorial in 2023.</div>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const author = params.get('author');
+        const date = params.get('date');
+        const title = params.get('title');
+        const text = params.get('text');
+        const img = params.get('img')
+        console.log(img);
+        const authorId = document.getElementById("authorId");
+        const dateId = document.getElementById("dateId");
+        const titleId = document.getElementById("titleId");
+        const textId = document.getElementById("textId");
+        const titleId1 = document.getElementById("titleId1");
+        const textId1 = document.getElementById("textId1");
+        const imgId = document.getElementById("imgId").src=img;
+
+        authorId.textContent += author;
+        dateId.textContent += date;
+        titleId.textContent += title;
+        titleId1.textContent += title;
+        textId.textContent += text;
+        textId1.textContent += text;
+    </script>
+</body>
+</html>

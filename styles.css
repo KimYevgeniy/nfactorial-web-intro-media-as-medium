@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    width: 1055px;
+    padding: 24px 160px 24px 160px;
+    background: #F1F1F1;
+}
+.body {
+    display: grid;
+    gap: 45px;
+}
+.header-small {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 70px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+.header-big {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 248px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 120px;
+}
+#articles {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 100px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: #F1F1F1;
+    padding: 0px 0px 36px;
+}
+.article-pic {
+    width: 265px;
+    height: 265px;
+    min-width: 265px;
+    min-height: 265px;
+    border-radius: 4px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+}
+.info-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: auto;
+    padding: 0px;
+    gap: 24px;
+}
+.info-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: none;
+    gap: 8px
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 52px;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 107px;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    background: linear-gradient(0deg, rgba(8, 30, 52, 0.12), rgba(8, 30, 52, 0.12)), #FFFBFE;
+}
+.inter400 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.inter500 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+.inter500-grey {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.5;
+}
+.inter700 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+/* opened Article styles */
+
+.news-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 70px;
+}
+.news-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.news-top1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+.news-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 64px;
+}
+.news-data {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.social-media {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.topic {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.img-auth {
+    width: 64px;
+    height: 64px;;
+}
+.img-topic {
+    width: 1120px;
+    height: 480px;
+    min-width: 1120px;
+    min-height: 480px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.sf-pro {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.interaction {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.artilce-text-full {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.social {
+    display: flex;
+    justify-content: row;
+    gap: 12px;
+}
