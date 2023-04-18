@@ -1,5 +1,5 @@
 const articles = document.getElementById('articles');
-console.log(articles)
+// console.log(articles)
 
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 let stories = [];
@@ -9,9 +9,7 @@ function getTopStories() {
     .then(promise=>promise.json())
     .then(function(data){
         const article = data.results;
-        console.log(article);
-        // const arr = article.results;
-        // console.log(arr);
+        // console.log(article);
         // console.log(article.splice(0,3));
         let i = 0;
         article.splice(0, 3).forEach(item => {
@@ -59,7 +57,7 @@ function getTopStories() {
         console.log(stories)
         for (let i = 0; i < stories.length; i++) {
             let id = document.getElementById(`${i}`);
-                console.log(id);
+                // console.log(id);
                 id.addEventListener("click", () => {
                     window.location.href = `openedArticle.html?author=${stories[i].byline}&date=${stories[i].updated_date}&title=${stories[i].title}&text=${stories[i].abstract}&img=${stories[i].multimedia[0].url}`;
                 });
